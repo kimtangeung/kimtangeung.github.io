@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: rgb(87, 0, 0);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            sidebar {
+                order: 2px solid red;
+                border-radius: 25px;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 1000px;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+        <title>Kimtang's Amazing Website!</title>    
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Kimtang's First Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div id="sidebar">
+                    <img src="https://i.ytimg.com/vi/XIMLoLxmTDw/hqdefault.jpg">
+                </div>
+                <div id="content">
+                    <header>Kimtang Eung</header>
+                    <p>Student at SPHS</p>
+                                        <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Art</li>
+                            <li>Games</li>
+                            <li>Ocean</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            
+            
+        </div>
+    </body>
+</html>
