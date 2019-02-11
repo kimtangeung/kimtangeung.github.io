@@ -8,10 +8,6 @@
                 padding: 10px;
                 font-family: arial;
             }
-            sidebar {
-                order: 2px solid red;
-                border-radius: 25px;
-            }
             header {
                 font-size: 1.5em;
                 font-weight: bold;
@@ -23,9 +19,8 @@
     
             /* navigation menu */
             nav {
-                background: rgb(239, 80, 41);
+                background: rgb(0, 0, 0);
                 margin: 0 auto;
-                margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
             }
@@ -43,7 +38,7 @@
                 padding: 0 10px;
             }
             nav a {
-                text-decoration: none;
+                text-decoration: underline;
                 color: #fff;
             }
     
@@ -57,11 +52,21 @@
                 padding: 10px;
             }
             [class=sidebar] img {
-                width: 1000px;
+                width: 200px;
             }
             [class=content] {
                 flex: 1;
                 padding: 15px;
+                background-color: lightgrey;
+                width: 300px;
+                height: 200px ;
+                border: 25px solid black;
+                padding: 25px;
+                margin: 10px;
+                position: fixed;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
             [class=interests] header {
                 font-size: 1.25em;
@@ -72,31 +77,28 @@
     <body>
         <div id="all-contents">
             <nav>
-                <header>Kimtang's First Website</header>
+                <header>Kimtang's Website</header>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                 </ul>
             </nav>
             <main>
-                <div id="sidebar">
-                    <img src="https://i.ytimg.com/vi/XIMLoLxmTDw/hqdefault.jpg">
+
                 </div>
-                <div id="content">
-                    <header>Kimtang Eung</header>
-                    <p>Student at SPHS</p>
+                <div class="content">
+                    <center><header>Kimtang Eung</header></center>
+                    <center><p>Student at SPHS</p></center>
                                         <section class="interests">
-                        <header>Interests</header>
-                        <ul>
-                            <li>Art</li>
-                            <li>Games</li>
-                            <li>Ocean</li>
+                        <center><header>Interests</header></center>
+                        
+                            <center><p>ME</p></center>
+                            <center><p>MYSELF</p></center>
+                            <center><p>I</p></center>
                         </ul>
                     </section>
                 </div>
             </main>
-            
-            
         </div>
     </body>
 </html>
